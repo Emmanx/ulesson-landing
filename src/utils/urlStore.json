@@ -1,0 +1,9 @@
+{
+    "root": "/",
+    "progress": "/progress",
+    "allProgress": "/progress/all",
+    "subjectProgress": "/progress/subject",
+    "achievement": "/achievement",
+    "allAchievements": "/achievement/all",
+    "subjectAchievement": "/achievement/subject"
+}
