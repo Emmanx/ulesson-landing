@@ -1,18 +1,35 @@
-import type { NextPage } from "next";
-import Head from "next/head";
+import { Box } from '@chakra-ui/react'
+import { Footer, Header } from 'layouts'
+import {
+  AllYouNeed,
+  ContactUs,
+  Hero,
+  VideoLib,
+  WhyTrustUs,
+} from 'components/templates/home'
+import type { NextPage } from 'next'
+import Head from 'next/head'
 
 const Home: NextPage = () => {
   return (
-    <div>
+    <Box>
       <Head>
         <title>uLesson</title>
         <meta name="description" content="Starter Kit for Frontend" />
         <link rel="icon" href="/favicon.ico" />
       </Head>
-      <div>RAN SUCCESSFULLY</div>
-      <footer></footer>
-    </div>
-  );
-};
 
-export default Home;
+      <Header />
+
+      <Hero />
+      <WhyTrustUs />
+      <AllYouNeed />
+      <VideoLib />
+      <ContactUs />
+
+      <Footer />
+    </Box>
+  )
+}
+
+export default Home
